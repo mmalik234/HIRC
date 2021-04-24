@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Author: Mahnoor Malik
+    Project: Health Insurance Risk Calculator for the Web
+
+    All rights reserved.
+-->
+
+<head>
+    <meta charset="UTf-8">
+    <title>Health Insurance Risk Calculator</title>
+    <link rel="stylesheet" href="RiskCalculator.css">
+</head>
+<body>
+   <h1>Health Insurance Risk Calculator</h1>
+   <b>Instructions... Please provide me the following information so I can understand more about you</b>
+   <h2>Please Select Your Age</h2><br/>
+    <select id="Age">
+        <option value="0">Greater than 30</option>
+        <option value="10">Greater than 45</option>
+        <option value="20">Greater than 60</option>
+        <option value="30">Above 60</option>
+    </select>
+    <br/>
+    <h2> Please Provide me your Height</h2>
+   <input id="height-in-feet" type ="number" placeholder="5"> ft</input> <input id="inches" type="number" placeholder="0"> inches</input> 
+   <h2> Please provide your weight</h2> <input id="weight-in-pounds" type="number" placeholder="0"> pounds</input>
+    
+   <p id ="BMIResult"></p>
+   <h2>Please Select Your BMI</h2><br/>
+     <select id="BMIResponse">
+        <option value="0">Normal</option>
+        <option value="30">OverWeight</option>
+        <option value="75">Else</option>
+    </select>
+    <br/> 
+
+    <h2>Please Select Your Blood Pressure</h2><br/>
+    <select id="BloodPressure">
+        <option value="0">Normal</option>
+        <option value="15">Elevated </option>
+        <option value="30">Stage 1</option>
+        <option value="75">Stage 2</option>
+        <option value="100">Crisis</option>
+    </select>
+    <br/>
+    <h2>Please Select Your Family Disease</h2><br/>
+    <select id="FamilyDisease">
+        <option value="10">Diabetes</option>
+        <option value="10"> Cancer</option>
+        <option value="10">Alzheimer’s</option>
+        
+    </select>
+    <br/><br/>
+    <p id ="Result"></p>
+    <button  type="button" onclick = "totalScore()"> Get Result</button>
+    </body>
+    <script src="script.js">
+    </script>
+    </html>

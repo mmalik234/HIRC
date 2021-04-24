@@ -1,0 +1,21 @@
+body{
+    background-color: lightpink;
+
+}
+ 
+
+h1 {
+    color:black;
+    font-style:oblique;
+}
+
+h2 {
+    color:darkblue;
+    font-style:oblique;
+
+}
+
+p {
+    font-weight: bolder;
+    font-style: oblique;
+}
